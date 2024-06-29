@@ -12,8 +12,8 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Header />
-      <FbLink />
       <App />
+      <FbLink />
     </BrowserRouter>
   </React.StrictMode>
 );

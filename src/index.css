@@ -1,10 +1,10 @@
-/*html {
+html {
   min-height: 100%;
-  background-image: url(image.jpg);
+  background-image: url(./images/bryggan.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}*/
+}
 
 body {
   margin: 0;
@@ -18,4 +18,20 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+p {
+  font-family: "Lexend Deca";
+  color: white;
+}
+h1 {
+  display: none;
+  font-family: "Lexend Deca";
+  color: white;
+  font-weight: normal;
+  font-size: 60px;
+  text-shadow: 2px 2px black;
+
+  @media (min-width: 668px) {
+    display: flex;
+  }
 }
