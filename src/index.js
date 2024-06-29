@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import Header from "./components/Header";
+import FbLink from "./components/FbLink";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 
@@ -11,6 +12,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Header />
+      <FbLink />
       <App />
     </BrowserRouter>
   </React.StrictMode>
