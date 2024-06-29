@@ -1,21 +1,22 @@
 //import logo from "./logo.svg";
 import "./App.css";
-import Header from "./components/Header";
-import HomePage from "./components/HomePage";
-import NavBar from "./components/NavBar";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 
-function App() {
+import HomePage from "./components/HomePage";
+import Contact from "./components/Contact";
+import Menu from "./components/Menu";
+
+const App = () => {
   return (
-    <div className="App">
-      <div className="App-header">
-        <Header />
-        <NavBar />
-      </div>
-      <div className="App-section">
-        <HomePage />
-      </div>
+    <div>
+      <Routes>
+        <Route path="/" exact element={<HomePage />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/menu" element={<Menu />}></Route>
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;
