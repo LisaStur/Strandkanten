@@ -12,8 +12,10 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Header />
-      <App />
-      <FbLink />
+      <div className="DeviceStyling">
+        <App />
+        <FbLink />
+      </div>
     </BrowserRouter>
   </React.StrictMode>
 );
