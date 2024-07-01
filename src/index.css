@@ -35,6 +35,15 @@ h1 {
     display: flex;
   }
 }
+
+h2 {
+  font-family: "Lexend Deca";
+  font-weight: normal;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+
 .DeviceStyling {
   display: flex;
   flex-direction: column;

@@ -1,18 +1,20 @@
 import React from "react";
+import styled from "styled-components";
 
 const FbLink = () => {
   return (
-    <div>
+    <FbSection>
+      <h2>Följ oss på Facebook:</h2>
       <div
         class="fb-page"
         data-href="https://www.facebook.com/strandkantenrestaurang"
         data-tabs="timeline"
-        data-width=""
-        data-height=""
+        data-width="400"
+        data-height="600"
         data-small-header="false"
-        data-adapt-container-width="true"
+        data-adapt-container-width="false"
         data-hide-cover="false"
-        data-show-facepile="true"
+        data-show-facepile="false"
       >
         <blockquote
           cite="https://www.facebook.com/strandkantenrestaurang"
@@ -23,8 +25,16 @@ const FbLink = () => {
           </a>
         </blockquote>
       </div>
-    </div>
+    </FbSection>
   );
 };
 
 export default FbLink;
+
+const FbSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(75, 83, 86, 0.8);
+  align-items: center;
+  }
+`;
