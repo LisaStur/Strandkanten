@@ -70,8 +70,8 @@ const TimeTableLink = styled.a`
   padding-left: 8px;
 
   &:hover {
-    background-color: rgba(80, 80, 100);
-    transition: 0.4s;
+    background-color: rgba(155, 138, 120);
+    transition: 0.2s;
   }
 `;
 const MapBox = styled.div`
