@@ -5,7 +5,7 @@ import exteriorsmal from "../images/exteriorsmal.jpg";
 
 const HomePage = () => {
   return (
-    <HomePageSection>
+    <div className="Block-background">
       <PageImageContainer>
         <PageImage src={exteriort} alt="Strandkantens brygga" />
         <PageImageSmall src={exteriorsmal} alt="Strandkantens brygga" />
@@ -25,39 +25,27 @@ const HomePage = () => {
           oktober. Under högsäsong är det öppet alla dagar medan det för- och
           eftersäsong är öppet på helgerna.
         </StartPageTextBiggerScreen>
-        {/*        <StartPageSmallHeader>öppettider:</StartPageSmallHeader>*/}
+        <StartPageText>
+          Vi tar inga bordsbeställningar. Kom förbi så gör vi vårt bästa för att
+          hitta plats åt alla.
+        </StartPageText>
         <StartPageText>
           Följ oss på Facebook för uppdateringar om öppettider och övriga
           nyheter!
         </StartPageText>
       </StartPageTextBox>
-    </HomePageSection>
+    </div>
   );
 };
 
 export default HomePage;
 
-const HomePageSection = styled.section`
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(75, 83, 86, 0.8);
-
-  @media (min-width: 668px) {
-    flex-direction: row;
-  }
-`;
 const StartPageTextBox = styled.div`
   display: flex;
   flex-direction: column;
   margin: 2%;
 `;
-/* const StartPageSmallHeader = styled.h2`
-  font-family: 'Lexend Deca', sans-serif;
-  font-weight: normal;
-  color: white;
-  font-size: 18px;
-  margin: 4% 0 0 4%;
-`*/
+
 const StartPageText = styled.p`
   color: white;
   font-size: 16px;
@@ -75,7 +63,11 @@ const StartPageTextBiggerScreen = styled(StartPageText)`
   }
 `;
 const PageImageContainer = styled.div`
-  padding: 8px;
+  padding: 0;
+
+  @media (min-width: 668px) {
+    padding: 8px;
+  }
 `;
 const PageImage = styled.img`
   display: none;

@@ -18,7 +18,7 @@ const LinkContainer = styled.section`
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0 10% 0 0;
+  padding: 0 10% 4% 0;
 
   @media (min-width: 668px) {
     padding: 0;

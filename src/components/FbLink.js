@@ -34,7 +34,8 @@ export default FbLink;
 const FbSection = styled.section`
   display: flex;
   flex-direction: column;
-  background-color: rgba(75, 83, 86, 0.8);
+  background-color: rgba(105,104,102, 0.6);
   align-items: center;
+  padding: 0 10px 0 0 ;
   }
 `;
