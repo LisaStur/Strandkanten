@@ -66,3 +66,20 @@ h2 {
     flex-direction: row;
   }
 }
+
+.Block-background-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(105, 104, 102, 0.6);
+  width: 100%;
+
+  @media (min-width: 668px) {
+    flex-direction: row;
+  }
+}
+.Block-background-fb {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(105, 104, 102, 0.6);
+  padding: 0 10px 0 0;
+}
